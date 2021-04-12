@@ -1,0 +1,23 @@
+ALGORITHM checkpoint
+VAR
+    A:string;
+    B:string:={"a","e","i","o","u","y","w"};
+    C:integer:=0;
+    W:integer:=0;
+    V:integer:=0;
+    i:integer:=0;
+    j:integer:=0;
+
+BEGIN
+    read(A);
+    While (A[i] !="."){ 
+        if(A[i] !=" ")
+        { C+=1}
+          else{W +=1}; 
+     for(j=0;j<8;j++){ 
+        if(A[i]=B[j]){V+=1} 
+     }; 
+    i+=1; 
+    };  
+    write(C,W,V); 
+END
